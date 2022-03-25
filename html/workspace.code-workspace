@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\java.txt"
+		},
+		{
+			"path": "..\\..\\subrat programmm"
+		},
+		{
+			"path": "..\\..\\pep"
+		},
+		{
+			"path": "..\\..\\pattern.java"
+		},
+		{
+			"path": "..\\..\\gitdemo"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "fgp5"
+	}
+}

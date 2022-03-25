@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        *{
+            background-color: rgb(27, 25, 27);
+        }
+        div{
+            color: rgb(241, 87, 15);
+            font-size: 30px;
+        }
+        p{
+            color: red;
+        }
+        .textcolor
+        {
+            color: seagreen;
+        }
+        .largetext
+        {
+            font-size: 30px;
+            
+        }
+        .textcolor.largetext{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        h4,h3,a{
+            color: rgb(224, 224, 34);
+        }
+        h3{
+            font-size: 50px;
+        }
+        #Unique{
+            color: cyan;
+        }
+        div p span{
+            color: darkmagenta;
+        }
+        div>p>span{
+            color: darkslategrey;
+        }
+        a[href= "https://nados.io/question/pattern-9"]
+        {
+            color: darkblue;
+        }
+        a[href ="www.netflix.com"]
+        {
+            color: darkred;
+        }
+        th,td{
+            border: 2px solid red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <p>Simple selectors (select elements based on name, id, class)Combinator selectors (select elements based on a specific relationship 
+         them)Pseudo-class selectors (select elements based on a certain state)Pseudo-elements selectors (select and styla part of an elemen 
+         Attribute selectors (select elements based on an attribute or attribute value) This page will explain the most basic CSS selectors.</p>
+        <div>
+            <h1>First headings</h1>
+            <p>
+                Simple selectors (select elements based on name, id, class)Combinator selectors (select elements based on a specific relationship 
+         them)Pseudo-class selectors (select elements based on a certain state)Pseudo-elements selectors (select and styla part of an elemen 
+         Attribute selectors (select elements based on an attribute or attribute value) This page will explain the most basic CSS selector
+            </p>
+
+        </div>
+<!--Class Sectors-->
+<h1>Class Selectors</h1>
+ <p class="textcolor largetext">Simple selectors (select elements based on name, id, class)Combinator selectors (select elements based on a specific relationship 
+them)Pseudo-class selectors (select elements based on a certain state)Pseudo-elements selectors (select and styla part of an elemen 
+ Attribute selectors (select elements based on an attribute or attribute value) This page will explain the most basic CSS selectors.</p>
+                
+<p class="largetext">Simple selectors (select elements based on name, id, class)Combinator selectors (select elements based on a specific relationship 
+them)Pseudo-class selectors (select elements based on a certain state)Pseudo-elements selectors (select and styla part of an elemen 
+ ttribute selectors (select elements based on an attribute or attribute value) This page will explain most basic CSS selectors.</p>
+                    
+ <p class="textcolor">Simple selectors (select elements based on name, id, class)Combinator selectors (select elements based on a specific relationship 
+them)Pseudo-class selectors (select elements based on a certain state)Pseudo-elements selectors (select and styla part of an elemen 
+Attribute selectors (select elements based on an attribute or attribute value) This page will
+explain the most basic CSS selectors.</p>
+
+<h1>Id selector</h1>
+
+ <p>imple selectors (select elements based on name, id, class)Combinator selectors (select elements based on a specific relationship 
+          them)Pseudo-class selectors (select elements based on a certain state)Pseudo-elements selectors (select and styla part of an elemen 
+   Attribute selectors (select elements based on an attribute or attribute value) This page will
+    explain the most basic CSS selectors</p>
+
+    <p id="Unique">imple selectors (select elements based on name, id, class)Combinator selectors (select elements based on a specific relationship 
+     them)Pseudo-class selectors (select elements based on a certain state)Pseudo-elements selectors (select and styla part of an elemen 
+    Attribute selectors (select elements based on an attribute or attribute value) This page will
+     explain the most basic CSS selectors</p>
+
+
+
+<!-- grouping selector -->
+  <h4> i am H1</h4>
+   <p>imple selectors (select elements based on name, id, class)Combinator selectors (select elements based on a specific relationship 
+    them)Pseudo-class selectors (select elements based on a certain state)Pseudo-elements selectors (select and styla part of an elemen 
+     Attribute selectors (select elements based on an attribute or attribute value) This page will
+           explain the most basic CSS selectorsimple selectors (select elements based on name, id, class)Combinator selectors (select elements based on a specific relationship 
+  them)Pseudo-class selectors (select elements based on a certain state)Pseudo-elements selectors (select and styla part of an elemen 
+    Attribute selectors (select elements based on an attribute or attribute value) This page will
+       explain the most basic CSS selectorsimple selectors (select elements based on name, id, class)Combinator selectors (select elements based on a specific relationship 
+them)Pseudo-class selectors (select elements based on a certain state)Pseudo-elements selectors (select and styla part of an elemen 
+ Attribute selectors (select elements based on an attribute or attribute value) This page will
+explain the most basic CSS selectors</p>
+
+
+<h3>i am h3</h3>
+
+ <p>imple selectors (select elements based on name, id, class)Combinator selectors (select elements based on a specific relationship 
+ them)Pseudo-class selectors (select elements based on a certain state)Pseudo-elements selectors (select and styla part of an elemen 
+     Attribute selectors (select elements based on an attribute or attribute value) This page will
+ them)Pseudo-class selectors (select elements based on a certain state)Pseudo-elements selectors (select and styla part of an elemen 
+Attribute selectors (select elements based on an attribute or attribute value) This page willexplain the most basic CSS selectorsimple
+ selectors (select elements based on name, id, class)Combinator selectors (select elements based on a specific relationship them)Pseudo-clas
+  selectors (select elements based on a certain state)Pseudo-elements selectors (select and styla part of an elemen 
+ Attribute selectors (select elements based on an attribute or attribute value) This page will
+explain the most basic CSS selectors</p>
+
+     <a href="https://nados.io/content">Nados</a>
+
+   <!-- Combinators selector-->
+   <!-- descendent selector -->
+                                            <div>
+                                               <p> <!-- descendent and child of div-->
+                                                   <span>I am Child</span> <!--descendent  of div but not a child of div child of p-->
+                                               </p>
+                                           </div>
+
+                                           <div>
+                                               <span>
+                                                   <p>
+                                                       <span>i am indirect childeren</span>
+                                                                                                       
+                                                   </p>
+                                               </span>
+                                            
+                                            </div>
+  <!-- Attribute selector -->
+  <a href="https://nados.io/question/pattern-9" target="blank">Nados</a>
+  <a href="https://www.google.com/search?q=google&rlz=1C1CHBF_enIN933IN933&oq
+  =goo&aqs=chrome.1.69i57j69i59j69i60l3j69i65j69i60l2.3406j0j7&sourceid=chrome&ie=UTF-8">google</a>
+  <a href="www.netflix.com">netflix</a>
+
+
+         
+        
+    
+</body>
+</html>

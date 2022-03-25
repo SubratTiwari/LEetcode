@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css selector</title>
+    <style>
+         *
+         {
+             background-color: black;
+         }
+        p
+        {
+            color: gold;
+        }
+        div{
+            color: gold;
+            font-size: 48px;
+        }
+        .textlarger.largest
+        {
+            color: rgb(214, 179, 38);
+        }
+        .larger
+        {
+            color: darkorange;
+        }
+        .textlarger.uniq
+        {
+            color: darkgreen;
+        }
+        h1,a,h2{
+            font-size: 60px;
+            color: indigo;
+        }
+        #master
+        {
+            color: rgb(214, 196, 214);
+        }
+        div p  span
+        {
+            color: gold;
+        }
+        div>span{ 
+            color: chocolate;
+            font: size 38px;;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- simple selector  -->
+    <!-- 1element selector -->
+    <p>Simple selectors (select elements based on name, id, class)Combinator selectors (select elements based on a specific relationship 
+        them)Pseudo-class selectors (select elements based on a certain state)Pseudo-elements selectors (select and styla part of an elemen 
+        Attribute selectors (select elements based on an attribute or attribute value) This page will explain the most basic CSS selectors.</p>
+
+    <div>Simple selectors (select elements based on name, id, class)Combinator selectors (select elements based on a specific relationship 
+    them)Pseudo-class selectors (select elements based on a certain state)Pseudo-elements selectors (select and styla part of an elemen 
+    Attribute selectors (select elements based on an attribute or attribute value) This page will explain the most basic CSS selectors.</div>
+
+
+    <!-- 2class selector -->
+    <p class= "textlarger largest">Simple selectors (select elements based on name, id, class)Combinator selectors (select elements based on a specific relationship 
+        them)Pseudo-class selectors (select elements based on a certain state)Pseudo-elements selectors (select and styla part of an elemen 
+        Attribute selectors (select elements based on an attribute or attribute value) This page will explain the most basic CSS selectors.</p>
+
+    <p class= "larger">Simple selectors (select elements based on name, id, class)Combinator selectors (select elements based on a specific relationship 
+        them)Pseudo-class selectors (select elements based on a certain state)Pseudo-elements selectors (select and styla part of an elemen 
+        Attribute selectors (select elements based on an attribute or attribute value) This page will explain the most basic CSS selectors.</p>
+
+
+    <p class= "textlarger uniq ">Simple selectors (select elements based on name, id, class)Combinator selectors (select elements based on a specific relationship 
+        them)Pseudo-class selectors (select elements based on a certain state)Pseudo-elements selectors (select and styla part of an elemen 
+        Attribute selectors (select elements based on an attribute or attribute value) This page will explain the most basic CSS selectors.</p>
+    
+    <!--id selector -->
+    <p>Simple selectors (select elements based on name, id, class)Combinator selectors (select elements based on a specific relationship 
+        them)Pseudo-class selectors (select elements based on a certain state)Pseudo-elements selectors (select and styla part of an elemen 
+        Attribute selectors (select elements based on an attribute or attribute value) This page will explain the most basic CSS selectors.</p>
+
+  <p id="master">Simple selectors (select elements based on name, id, class)Combinator selectors (select elements based on a specific relationship 
+     them)Pseudo-class selectors (select elements based on a certain state)Pseudo-elements selectors (select and styla part of an elemen 
+      Attribute selectors (select elements based on an attribute or attribute value) This page will explain the most basic CSS selectors.</p>
+
+    <!-- grouping selector -->
+    <h1>i am powerfull</h1>
+
+    <h2>i am superman</h2>
+    <a href="https://www.youtube.com/watch?v=-QTyaQkhiBc&list=PLlhM4lkb2sEiScGRZEHkHsI1ncXKLq5Zp&index=11"> youtube pattern</a>
+
+    <!-- combinator selector -->
+    
+        <div>
+            <span>
+                <p>
+                    <span>i am childeren</span>
+                </p>
+            </span>
+        </div>
+    
+
+    
+        <div>
+            <span>i am ndbasdf</span>
+        </div>
+    
+
+</body>
+</html>
