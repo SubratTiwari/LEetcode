@@ -1,0 +1,52 @@
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public boolean isPalindrome(ListNode head) {
+        if(head == null) return true;
+
+        // find the mid (consider left node if its even) using tortoise method
+        ListNode slow = head, fast = head;
+        while(fast.next != null && fast.next.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        // reverse the right side of the linked list.
+        // we remember our mid node position because if we finally want to reverse again back to original it will help
+        ListNode mid = slow;
+        //System.out.println("mid: "+mid.val);
+        // basically I'm calling reverseList and passing mid.next to get the reversed head of right half and point mid next to reversed head
+        mid.next = reverseList(mid.next, null);
+        // move the slow pointer ahead by one and start pointing dummy node to 1st node then compare both until slow becomes null.
+        slow = slow.next;
+        ListNode d = head;
+        while(slow != null) {
+            if(slow.val != d.val)
+                return false;
+            slow = slow.next;
+            d = d.next;
+        }
+        return true;
+        
+    }
+    
+    public ListNode reverseList(ListNode node, ListNode rhead) {
+        if(node == null)
+            return null;
+        if(node.next == null) {
+            rhead = node;
+            return rhead;
+        }
+        rhead = reverseList(node.next, rhead);
+        node.next.next = node;
+        node.next = null;
+        return rhead;
+    }
+}

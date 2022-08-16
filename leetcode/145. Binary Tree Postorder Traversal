@@ -1,0 +1,19 @@
+class Solution {
+    public List<Integer> postorderTraversal(TreeNode root) {
+        List<Integer> result = new ArrayList<Integer>();
+        
+        recursivePosoder(root, result);
+        return result;
+    }
+    public void recursivePosoder(TreeNode node, List<Integer> result )
+    {
+        if(node == null){
+            return ;
+        }
+        
+        
+        recursivePosoder(node.left, result);
+        recursivePosoder(node.right, result);
+        result.add(node.val);
+    }
+}

@@ -1,0 +1,19 @@
+class Solution {
+    public List<Integer> preorderTraversal(TreeNode root) {
+        List<Integer> result = new ArrayList<Integer>();
+        
+        recursivePreoder(root, result);
+        return result;
+    }
+    public void recursivePreoder(TreeNode node, List<Integer> result )
+    {
+        if(node == null){
+            return ;
+        }
+        
+        
+        recursivePreoder(node.left, result);
+        recursivePreoder(node.right, result);
+        result.add(node.val);
+    }
+}

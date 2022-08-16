@@ -1,0 +1,18 @@
+class Solution {
+    int sum = 0;
+    public int findTilt(TreeNode root) {
+        computeSum(root);
+        return sum;
+    }
+    
+    public int computeSum(TreeNode root){
+        if(root == null){
+            return 0;
+        }
+
+        int left = computeSum(root.left);
+        int right = computeSum(root.right);
+        sum += Math.abs(left - right);
+        return left + right + root.val;
+    }
+}

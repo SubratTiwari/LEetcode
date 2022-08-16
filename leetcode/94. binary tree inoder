@@ -1,0 +1,23 @@
+class Solution {
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> al = new ArrayList<>();
+        return addIt(root,al);
+    }
+    
+    public List<Integer> addIt(TreeNode root, List<Integer> al)
+    {
+	//base case if node has leaf node return the List
+        if(root == null)
+            return al;
+    
+	//travel the left most node
+        addIt(root.left,al);
+		// add root value in List
+        al.add(root.val);
+		//travel the right most node
+        addIt(root.right,al);
+        
+        return al;
+    }
+    
+}
